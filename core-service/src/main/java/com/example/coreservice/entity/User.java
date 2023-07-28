@@ -1,12 +1,14 @@
 package com.example.coreservice.entity;
 
+import com.example.commonservice.entity.IdEntity;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="users")
-public class User extends IDEntity {
+@Table(name="user")
+public class User extends IdEntity {
     @Column(name = "username")
     private String userName;
     private String email;
